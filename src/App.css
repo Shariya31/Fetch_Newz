@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  transition: all linear .2s;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* --Navbar-- */
+.navbar{
+  background: rgb(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+ 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo_image{
+  width: 100px;
+  height: 100px;
+  margin: 12px 15px;
+  padding: 11px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_image img{
+  height: 70%;
+  width: 70%;
+  position: relative;
+}
+
+.links{
+  display: flex;
+  
+ 
+}
+
+.links li {
+  margin: 12px 10px;
+  padding: 12px 14px;
+}
+
+.links li a {
+  /* background-color: red; */
+  color:rgb(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  transition: all .9s;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.links li:hover{
+  scale: 1.2;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 50px;
+  &>a{
+    color: red;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* --News_Item-- */
+.news_items .card img{
+  height: 250px;
+  /* width: 100px; */
 }
