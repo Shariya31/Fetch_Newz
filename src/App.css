@@ -9,6 +9,10 @@
   transition: all linear .2s;
 }
 
+body{
+  background-color:rgb(0, 0, 0, 0.9); ;
+}
+
 /* --Navbar-- */
 .navbar{
   background: rgb(0, 0, 0, 0.9);
@@ -62,7 +66,39 @@
 }
 
 /* --News_Item-- */
-.news_items .card img{
-  height: 250px;
-  /* width: 100px; */
+
+.card{
+ margin: 12px 13px;
+ padding: 12px 14px;
+ border: 2px solid rgba(101, 81, 81, 0.436);
+ background-color: rgba(222, 235, 238, 0.367);
 }
+
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-body .card-title{
+  font-size: 1.3rem;
+  max-height: 100px;
+  text-align: center;
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid black;
+  color: rgb(255, 255, 255);
+}
+
+.card .card-body .card-title:hover{
+  color: yellow;
+  background-color: black;
+  scale: 1.1;
+}
+
+.card .card-body .card-text{
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+}
+
